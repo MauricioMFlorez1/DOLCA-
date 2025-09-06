@@ -1,0 +1,16 @@
+@startuml clasesDOLCA
+
+class Usuario {
+    - id: init 
+    - nombre: String
+    - correoCorporativo: String
+    + iniciarSesion(): boolean
+}
+
+class Estudiante {
+    + realizarPedido(menu: Menu, items: List<Item>, metodoPago: String): Pedido
+}
+
+class AdministradorDOLCA {}
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml  casousoDolca
+left to right direction
+actor "Estudiante" as est 
+actor "Administrador DOLCA" as admin 
+actor "Cajero" as cajero
+
+rectangle "Sistemas de Pedidos DOLCA"{
+    usecase "Iniciar Sesion" as UC1
+    usecase "Realizar Pedido" as UC2
+}
+
+est --> UC1
+est --> UC2
+admin --> UC1
+admin --> UC2
+UC1 <-- cajero
+@enduml
